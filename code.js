@@ -6,11 +6,22 @@ setInterval(myTimer,1000);
 
 function myTimer(){    
   let today = new Date();
-  let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  var h = today.getSeconds();
+  // var m = today.getMinutes();
+  // var s = today.getSeconds();
+  if(h>12){
+      var time = (today.getHours())-12 + ":" + today.getMinutes() + ":" + today.getSeconds();
+    }
+    else{
+      var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    }
+  // let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
   document.getElementById("time").innerHTML = time;
   let date = day[today.getDay()] + ',' + month[today.getMonth()] + today.getDate() + " " + today.getFullYear();
-  document.getElementById("date").innerHTML = date;  
-}
+  document.getElementById("date").innerHTML = date;
+  }
+
+
 
 
 // if(h>12){
