@@ -1,0 +1,14 @@
+body{
+  background-image: url("Week1/Application1/411291d1-054b-4301-9439-97aeb21014af.JPG");
+  background-repeat: no-repeat;
+  /* background-color: greenyellow; */
+}
+
+h1{
+  color: whitesmoke;
+  text-align: center;
+  font-family: 'Arial';
+  text-shadow: 2px 2px #75dd0c;
+  font-size: 51px;
+  text-transform: uppercase;
+}
