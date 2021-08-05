@@ -2,19 +2,15 @@ const day = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturd
 
 const month = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sept","Oct","Nov","Dec"];
 
-var today = new Date();
-
-let h = today.getHours();
-
 setInterval(myTimer,1000);
 
 function myTimer(){    
-  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  let today = new Date();
+  let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
   document.getElementById("time").innerHTML = time;
-  var date = day[today.getDay()] + ',' + month[today.getMonth()] + today.getDate() + " " + today.getFullYear();
-  document.getElementById("date").innerHTML = date;
+  let date = day[today.getDay()] + ',' + month[today.getMonth()] + today.getDate() + " " + today.getFullYear();
+  document.getElementById("date").innerHTML = date;  
 }
-
 
 
 // if(h>12){
