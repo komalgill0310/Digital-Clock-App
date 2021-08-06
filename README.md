@@ -1,7 +1,7 @@
 # Digital-Clock-App 
 <font size=6> Clock is build using HTML, CSS and JavaScript. </font>
 
-# To Open a Clock Project Click[here](https://komalgill0310.github.io/Digital-Clock-App/)  
+# To Open a Clock Project Click [here](https://komalgill0310.github.io/Digital-Clock-App/)  
 
 # How does the website look
 <img src = "Capture.PNG">
