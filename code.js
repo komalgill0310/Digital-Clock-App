@@ -4,31 +4,60 @@ const month = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sept","Oct","N
 
 setInterval(myTimer,1000);
 
+    // var m = today.getMinutes();
+    // var s = today.getSeconds();
+
+    function leadingZero(s){
+      if(s<10){
+        s = "0" + s;
+      }
+    return s;
+  }
+    // function leadingZero(m,s){
+    //   if(m,s<10){
+    //     m = "0" + today.getMinutes();
+    //     s = "0" + today.getSeconds();
+    //   }
+    //   return m,s;
+    // }
+
 function myTimer(){    
-    let today = new Date();
+    var today = new Date();  
     // var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-  
+    // var m = today.getMinutes();
+    var s = today.getSeconds();  
     if(today.getHours()>12){
-        var time = today.getHours()-12 + ":" + m + ":" + s;
+        var time = today.getHours()-12 + ":" + today.getMinutes() + ":" + s;
       }
       else{
-        var time = today.getHours() + ":" + m + ":" + s;
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + s;
       }
     document.getElementById("time").innerHTML = time;
     let date = day[today.getDay()] + ',' + month[today.getMonth()] + today.getDate() + " " + today.getFullYear();
-    document.getElementById("date").innerHTML = date;
-    m = leadingZero(m);
-    s = leadingZero(s);
+    document.getElementById("date").innerHTML = date;  
 }
 
-function leadingZero(i){
-  if(i<10){
-    i = "0" + i;
-  }
-  return i;
-}
+    // function leadingZero(s){
+    //   // if(m,s<10){
+    //   //   m = "0" + today.getMinutes();
+    //   //   s = "0" + today.getSeconds();
+    //   // }
+    //   // return m,s;
+    //   return (today.getSeconds()<10)+"0"+today.getSeconds();
+     
+    // }
+
+
+
+    // m = leadingZero(m);
+    // s = leadingZero(s);
+
+    // m = leadingZero(m);
+    // s = leadingZero(s);
+// var i = m , s;
+
+
+
 
 // var  today = new Date();
   // var m = today.getMinutes();

@@ -1,14 +1,32 @@
 body{
-  background-color: #dd6666;
+  background-image: url("bbead4a1318caac7ea3e4fa8b2ed9e06.jpg");
 }
 
 h1{
   color: whitesmoke;
   text-align: center;
-  font-family: 'Arial';
-  text-shadow: 2px 2px #75dd0c;
-  font-size: 51px;
+  font-family: 'Times';
+  text-shadow: 4px 4px black;
+  font-size: 127px;
   text-transform: uppercase;
+  padding: none;
+  margin: none;
 }
 
+#time{
+  color: grey;
+  font-size: 90px;
+  text-align: center;
+  font-weight: bolder;
+  padding: none;
+  margin: none;
+}
 
+#date{
+  color: grey;
+  font-size: 90px;
+  text-align: center;
+  font-weight: bold;
+  padding: none;
+  margin: none;
+}
