@@ -1,3 +1,8 @@
+/* *, *::before, *::after {
+  margin: 0;
+  padding: 0;
+} */
+
 body{
   background-image: url("bbead4a1318caac7ea3e4fa8b2ed9e06.jpg");
 }
@@ -9,9 +14,8 @@ h1{
   text-shadow: 6px 4px black;
   font-size: 90px;
   text-transform: uppercase;
-  padding: none;
-  margin: none;
-  border-spacing: none;
+  padding: 10px;
+  margin: 15px;
 }
 
 #time{
@@ -19,9 +23,8 @@ h1{
   font-size: 90px;
   text-align: center;
   font-weight: bolder;
-  padding: none;
-  margin: none;
-  border-spacing: none;
+  padding: 20px;
+  margin: 20px;
 }
 
 #date{
@@ -29,7 +32,6 @@ h1{
   font-size: 70px;
   text-align: center;
   font-weight: bold;
-  padding: none;
-  margin: none;
-  border-spacing: none;
+  padding: 0;
+  margin: 0;
 }
