@@ -23,8 +23,26 @@ function myTimer(){
         var time = hours + ":" + minutes + ":" + seconds;
       }
     document.getElementById("time").innerHTML = time;
-    let date = day[today.getDay()] + ',' + month[today.getMonth()] + today.getDate() + " " + today.getFullYear();
-    document.getElementById("date").innerHTML = date;  
+
+    var ord =  today.getDate();
+
+    if (today.getDate() == 1 | today.getDate() == 21 | today.getDate() == 31){
+      ordinalNumber = today.getDate() + "st";
+    }
+    else if (today.getDate() == 2 | today.getDate() == 22)
+    {
+      ordinalNumber = today.getDate() + "nd";
+    }
+    else if (today.getDate() == 3 | today.getDate() == 23){
+      ordinalNumber = today.getDate() + "rd";
+    }
+    else {
+      ordinalNumber = today.getDate() + "th";
+    }
+    
+    let date = day[today.getDay()] + ',' + month[today.getMonth()] + ordinalNumber + " " + today.getFullYear();
+    document.getElementById("date").innerHTML = date;    
 }
+
 
   
