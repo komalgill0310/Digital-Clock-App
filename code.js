@@ -24,7 +24,7 @@ function myTimer(){
       }
     document.getElementById("time").innerHTML = time;
 
-    var ord =  today.getDate();
+    var ordinalNumber =  today.getDate();
 
     if (today.getDate() == 1 | today.getDate() == 21 | today.getDate() == 31){
       ordinalNumber = today.getDate() + "st";
